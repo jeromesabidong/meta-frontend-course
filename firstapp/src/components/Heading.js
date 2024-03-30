@@ -1,7 +1,7 @@
-function Heading() {
-    let title = "This is some heading text";
-    return (
-        <h1>{title}</h1>
-    )
-};
+const Heading = props => {
+    return <h1>{props.title}</h1>
+}
 
+const ShortHeading = props => <h1>{props.title}</h1>
+
+export {Heading, ShortHeading}

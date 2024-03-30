@@ -1,12 +1,8 @@
-function Nav() {
+function Nav(props) {
     return (
         <nav className="main-nav">
-            <ul>
-                <li>Home</li>
-                <li>Articles</li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
+            {/* usage of props.children */}
+            {props.children}
         </nav>
     )
 }
